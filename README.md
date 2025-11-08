@@ -29,12 +29,12 @@ Siga os passos abaixo para executar o projeto localmente:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/meuappagro.git](https://github.com/seu-usuario/meuappagro.git)
+    git clone https://github.com/OtacilioNE/MeuAplicativoAgricola
     ```
 
 2.  **Entre na pasta do projeto:**
     ```bash
-    cd meuappagro
+    cd MeuAplicativoAgricola
     ```
 
 3.  **Instale as dependências:**
