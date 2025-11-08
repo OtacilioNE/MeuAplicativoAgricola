@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+# 🌾 AppAgro: Registo de Plantações (Projeto React Native)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é o meu primeiro projeto prático desenvolvido com React Native e Expo, como parte da disciplina de Desenvolvimento de Aplicativos Móveis, lecionada pelo professor **Douglas Rohden**.
 
-## Get started
+O projeto é um aplicativo de gestão de plantações, que evoluiu de um ecrã único para uma arquitetura profissional com navegação por abas, gestão de estado global (Context API) e persistência de dados no dispositivo.
 
-1. Install dependencies
+## 🚀 Funcionalidades
 
-   ```bash
-   npm install
-   ```
+* **Autenticação:** Tela de Login (simulada) para proteger o acesso à aplicação.
+* **Navegação em Pilha (Stack):** Fluxo de Login -> App Principal.
+* **Navegação por Abas (Tabs):** O app principal é dividido em "Plantações" (para listar) e "Registar" (para adicionar).
+* **Formulário Completo:** Captura de dados com `TextInput` (Nome, Área), `Picker` (Tipo de Grão) e `Switch` (Irrigação).
+* **Gestão de Estado Global:** Utilização da **React Context API** para criar um "cérebro" global. Isto permite que a aba de Registo atualize a lista na outra aba em tempo real.
+* **Persistência de Dados:** Os registos são salvos no dispositivo usando `AsyncStorage`. Os dados não se perdem ao fechar e reabrir o aplicativo.
+* **CRUD Básico:** Funcionalidade de Criar (Create), Ler (Read) e Apagar (Delete) registos, com um `Alert` de confirmação para exclusão.
 
-2. Start the app
+## 🛠️ Tecnologias Utilizadas
 
-   ```bash
-   npx expo start
-   ```
+* **React Native**
+* **Expo** (com **Expo Router** para navegação baseada em ficheiros)
+* **React Context API** (para gestão de estado global)
+* **AsyncStorage** (para persistência de dados local)
+* **@expo/vector-icons** (para os ícones das abas)
+* **@react-native-picker/picker**
 
-In the output, you'll find options to open the app in a
+## 🏁 Como Executar o Projeto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Siga os passos abaixo para executar o projeto localmente:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/meuappagro.git](https://github.com/seu-usuario/meuappagro.git)
+    ```
 
-## Get a fresh project
+2.  **Entre na pasta do projeto:**
+    ```bash
+    cd meuappagro
+    ```
 
-When you're ready, run:
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-```bash
-npm run reset-project
-```
+4.  **Execute o projeto com Expo:**
+    ```bash
+    npx expo start
+    ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+5.  **Abra no seu dispositivo ou simulador:**
+    * Pressione `w` para abrir na Web.
+    * Pressione `a` para abrir no simulador Android.
+    * Pressione `i` para abrir no simulador iOS.
+    * Escaneie o QR code com o app Expo Go no seu telemóvel.
 
-## Learn more
+## 🔑 Como Usar
 
-To learn more about developing your project with Expo, look at the following resources:
+Para fins de demonstração, a tela de login está com credenciais simuladas:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* **Email:** `admin`
+* **Senha:** `123`
 
-## Join the community
+## 👨‍🏫 Agradecimentos
 
-Join our community of developers creating universal apps.
+Este projeto é o resultado da atividade prática "Trabalho Prático: Aplicativo Completo" da disciplina de Desenvolvimento de Aplicativos Móveis, proposta pelo professor **Douglas Rohden**.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📄 Licença
+
+Distribuído sob a licença MIT.
